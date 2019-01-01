@@ -9,7 +9,7 @@ import json
 class WeiboPipeline(object):
 
     def __init__(self):
-        self.file = open("test.json","w")
+        self.file = open("test.json","w",encoding='UTF-8')
 
     def process_item(self, item, spider):
         text = json.dumps(dict(item),ensure_ascii = False)+",\n"
