@@ -13,3 +13,9 @@ class WeiboItem(scrapy.Item):
     # name = scrapy.Field()
     img_url = scrapy.Field()
     article = scrapy.Field()
+
+
+class CommentMess(scrapy.Item):
+    user_name = scrapy.Field()
+    user_url = scrapy.Field()
+    user_comment = scrapy.Field()
