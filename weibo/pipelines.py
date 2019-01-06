@@ -22,7 +22,7 @@ class WeiboPipeline(object):
 class CommentMessPipeline(object):
 
     def __init__(self):
-        self.file = open("lsn.json","w",encoding='UTF-8')
+        self.file = open("lsn.json","a+",encoding='UTF-8')
 
     def process_item(self, item, spider):
         text = json.dumps(dict(item),ensure_ascii = False)+",\n"
