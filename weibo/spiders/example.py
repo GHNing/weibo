@@ -8,7 +8,7 @@ class ExampleSpider(scrapy.Spider):
     allowed_domains = ['weibo.cn']
     start_urls = []
     custom_settings = {
-        'ITEM_PIPELINES': {'weibo.pipelines.CommentMessPipeline': 300, }
+        'ITEM_PIPELINES': {'weibo.pipelines.SaveMongodb_Pileline': 300, }
     }
     _cookie = {'_T_WM': '0756c121808bdf0dbe5b5c70543b5ba8',
               'SCF': 'Akcn8Pka8Ccm65nuehQNFkLlhPtf5WZ4QazhcCoOP-zDUzRriDucu9IX07ZZT2-k3mPB2Y5rqg1QinqE8Lu-zH8.',

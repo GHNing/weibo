@@ -67,6 +67,7 @@ DOWNLOAD_DELAY = 2
 ITEM_PIPELINES = {
     'weibo.pipelines.WeiboPipeline': 300,
     'weibo.pipelines.CommentMessPipeline': 500,
+    'weibo.pipelines.SaveMongodb_Pileline':700,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
